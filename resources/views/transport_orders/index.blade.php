@@ -1,11 +1,6 @@
 <x-wrapper>
 
 
-
-
-
-
-
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -31,7 +26,7 @@
                                     <th>Unloading Date</th>
                                     <th>Loading Address</th>
                                     <th>Unloading Address</th>
-                                    <th width="280px">Action</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,17 +42,6 @@
                                     <td>{{ $transportOrder->loading_address }}</td>
                                     <td>{{ $transportOrder->unloading_address }}</td>
                                     <td>
-                                        <form action="{{ route('transport_orders.destroy', $transportOrder->id) }}" method="POST">
-
-                                            <a class="btn btn-info" href="{{ route('transport_orders.show', $transportOrder->id) }}">Show</a>
-
-                                            <a class="btn btn-primary" href="{{ route('transport_orders.edit', $transportOrder->id) }}">Edit</a>
-
-                                            @csrf
-                                            @method('DELETE')
-
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach

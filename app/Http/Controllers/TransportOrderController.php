@@ -113,6 +113,6 @@ public function destroy(TransportOrder $transportOrder)
     $transportOrder->delete();
 
     return redirect()->route('transport_orders.index')
-                    ->with('success', 'Transport order deleted successfully');
+    ->with('success', 'Transport order deleted successfully');
 }
 }

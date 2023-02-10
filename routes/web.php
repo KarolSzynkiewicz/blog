@@ -7,5 +7,4 @@ use App\Http\Controllers\TransportOrderController;
 Route::get('/', function () {   return view('welcome');
 });
 
-Route::get('/orders', [TransportOrderController::class, 'index']);
-//Route::resource('orders', TransportOrderController::class);
+Route::resource('orders', TransportOrderController::class);

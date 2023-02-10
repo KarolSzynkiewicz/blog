@@ -11,4 +11,6 @@ class TransportOrder extends Model
         'client', 'reference_number', 'price', 'currency', 'truck', 'loading_date', 'unloading_date', 'loading_address', 'unloading_address'
     ];
     use HasFactory;
+
+
 }

@@ -59,8 +59,10 @@ class TransportOrderController extends Controller
      * @param  \App\TransportOrder  $transportOrder
      * @return \Illuminate\Http\Response
      */
-public function show(TransportOrder $transportOrder)
+public function show($order)
 {
+
+    $transportOrder = TransportOrder::findOrFail($order);
     return view('transport_orders.show', compact('transportOrder'));
 }
 

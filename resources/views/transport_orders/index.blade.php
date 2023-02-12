@@ -1,11 +1,13 @@
 <x-wrapper>
 
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Transport Orders</div>
+                    <div class="flex justify-between items-center">
+                        <div class="card-header">Transport Orders</div>
+                        <x-button class="ml-4">Dodaj</x-button>
+                      </div>
 
                     <div class="card-body">
                         @if (session('success'))
@@ -22,6 +24,10 @@
                                         <table class="min-w-full">
                                             <thead class="border-b">
                                                 <tr>
+                                                    <th scope="col"
+                                                    class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                                    id
+                                                    </th>
                                                     <th scope="col"
                                                         class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                                                         Truck
@@ -45,7 +51,10 @@
                                                 @foreach ($transportOrders as $transportOrder)
                                                 <tr class="border-b">
                                                     <td
-                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                                    class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                                    {{ $transportOrder->id }}</td>
+                                                    <td
+                                                        class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                                         {{ $transportOrder->truck }}</td>
                                                     <td
                                                         class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
@@ -57,7 +66,7 @@
                                                     </td>
                                                     <td
                                                         class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                                        show details / edit / delete
+                                                        <x-button><a href="/orders/{{ $transportOrder->id  }}">szczegóły</a> </x-button>
                                                     </td>
                                                 </tr>
                                                 @endforeach

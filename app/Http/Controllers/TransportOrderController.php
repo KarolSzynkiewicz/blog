@@ -7,11 +7,7 @@ use App\Models\TransportOrder;
 
 class TransportOrderController extends Controller
 {
-    /**
-     * Display a listing of the transport orders.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $transportOrders = TransportOrder::all();
@@ -19,22 +15,11 @@ class TransportOrderController extends Controller
         return view('transport_orders.index', compact('transportOrders'));
     }
 
-    /**
-     * Show the form for creating a new transport order.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('transport_orders.create');
     }
 
-    /**
-     * Store a newly created transport order in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -53,12 +38,7 @@ class TransportOrderController extends Controller
         return redirect()->route('transport_orders.index')
                         ->with('success', 'Transport order created successfully.');
     }
-/**
-     * Display the specified transport order.
-     *
-     * @param  \App\TransportOrder  $transportOrder
-     * @return \Illuminate\Http\Response
-     */
+
 public function show($order)
 {
 
@@ -66,24 +46,13 @@ public function show($order)
     return view('transport_orders.show', compact('transportOrder'));
 }
 
-/**
- * Show the form for editing the specified transport order.
- *
- * @param  \App\TransportOrder  $transportOrder
- * @return \Illuminate\Http\Response
- */
-public function edit(TransportOrder $transportOrder)
+
+public function edit($order)
 {
+    $transportOrder = TransportOrder::findOrFail($order);
     return view('transport_orders.edit', compact('transportOrder'));
 }
 
-/**
- * Update the specified transport order in storage.
- *
- * @param  \Illuminate\Http\Request  $request
- * @param  \App\TransportOrder  $transportOrder
- * @return \Illuminate\Http\Response
- */
 public function update(Request $request, TransportOrder $transportOrder)
 {
     $request->validate([
@@ -104,12 +73,7 @@ public function update(Request $request, TransportOrder $transportOrder)
                     ->with('success', 'Transport order updated successfully');
 }
 
-/**
- * Remove the specified transport order from storage.
- *
- * @param  \App\TransportOrder  $transportOrder
- * @return \Illuminate\Http\Response
- */
+
 public function destroy(TransportOrder $transportOrder)
 {
     $transportOrder->delete();

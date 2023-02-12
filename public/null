@@ -1,0 +1,6 @@
+TransportOrder::all
+App\Models\TransportOrder::all
+$orders = App\Models\TransportOrder::all
+$orders = App\Models\TransportOrder::all
+$orders = App\Models\TransportOrder::all()
+$orders = App\Models\TransportOrder::all()->first()

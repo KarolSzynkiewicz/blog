@@ -1,16 +1,18 @@
 <x-wrapper>
 
-    {{ $transportOrder->unloading_address }}
-
-
 <div class="flex flex-wrap -mx-3">
-    <div class="relative z-20 w-full max-w-full px-3 lg:flex-0 shrink-0 lg:w-7/12">
+    <div class="relative z-20 w-full max-w-full px-3 lg:flex-0 shrink-0 ">
     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-transparent border-0 border-solid shadow-none border-black-125 rounded-2xl bg-clip-border">
     <div class="flex-auto p-4">
     <div class="flex flex-wrap -ml-3">
     <div class="w-full max-w-full px-3 lg:flex-0 shrink-0 lg:w-6/12">
     <div class="flex flex-col h-full">
-    <h2 class="mb-0 font-bold dark:text-white">Zlecenie Transportowe XYZ</h2>
+        <div class="flex justify-between">
+            <div class="left"><h2 class="mb-0 font-bold dark:text-white">Zlecenie Transportowe {{ $transportOrder->id  }}</h2></div>
+            <div class="right"><x-button><a href="/orders/{{ $transportOrder->id  }}/edit">edytuj</a></x-button><x-button>usuń</x-button></div>
+          </div>
+
+
     </div>
     </div>
     </div>
@@ -24,9 +26,9 @@
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
     <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Data załadunku</p>
-    <h5 class="mb-0 font-bold dark:text-white">
-    $53,000
-    <span class="leading-normal text-sm font-weight-bolder text-lime-500">+55%</span>
+    <h5 class="mb-0  dark:text-white">
+    {{ $transportOrder->loading_date }}
+
     </h5>
     </div>
     </div>
@@ -47,9 +49,9 @@
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
     <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Data rozładunku</p>
-    <h5 class="mb-0 font-bold dark:text-white">
-    2,300
-    <span class="leading-normal text-sm font-weight-bolder text-lime-500">+3%</span>
+    <h5 class="mb-0  dark:text-white">
+    {{ $transportOrder->unloading_date}}
+
     </h5>
     </div>
     </div>
@@ -72,9 +74,9 @@
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
     <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Miejsce załadunku</p>
-    <h5 class="mb-0 font-bold dark:text-white">
-    +3,462
-    <span class="leading-normal text-red-600 text-sm font-weight-bolder">-2%</span>
+    <h5 class="mb-0  dark:text-white">
+        {{ $transportOrder->loading_address }}
+
     </h5>
     </div>
     </div>
@@ -94,9 +96,8 @@
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
      <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Miejsce rozładunku</p>
-    <h5 class="mb-0 font-bold dark:text-white">
-    $103,430
-    <span class="leading-normal text-sm font-weight-bolder text-lime-500">+5%</span>
+    <h5 class="mb-0  dark:text-white">
+    {{ $transportOrder->unloading_address }}
     </h5>
     </div>
     </div>

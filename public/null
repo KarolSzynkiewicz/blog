@@ -1,6 +1,20 @@
-TransportOrder::all
-App\Models\TransportOrder::all
-$orders = App\Models\TransportOrder::all
-$orders = App\Models\TransportOrder::all
-$orders = App\Models\TransportOrder::all()
-$orders = App\Models\TransportOrder::all()->first()
+$companies= Company::all()
+$companies= Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= App\Models\Company::all()
+$companies= company::factory()
+$companies= Company::factory()
+$companies= App\Models\Company::factory()
+$companies= App\Models\User::factory()
+$companies= App\Models\Company::factory()
+$companies= App\Models\Company::factory()
+$companies= App\Models\Company::all()
+Company::factory()->count(500)->create()
+Company::factory()->count(500)->create()
+Company::all()

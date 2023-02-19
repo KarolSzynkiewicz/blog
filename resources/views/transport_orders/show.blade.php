@@ -8,7 +8,7 @@
     <div class="w-full max-w-full px-3 lg:flex-0 shrink-0 lg:w-6/12">
     <div class="flex flex-col h-full">
         <div class="flex justify-between">
-            <div class="left"><h2 class="mb-0 font-bold dark:text-white">Zlecenie Transportowe {{ $transportOrder->id  }}</h2></div>
+            <div class="left"><h2 class="mb-0 font-bold">Zlecenie Transportowe {{ $transportOrder->id  }}</h2></div>
             <div class="right"><x-button><a href="/orders/{{ $transportOrder->id  }}/edit">edytuj</a></x-button><x-button>usuń</x-button></div>
           </div>
 
@@ -20,13 +20,13 @@
     </div>
     <div class="flex flex-wrap -mx-3">
     <div class="w-full max-w-full px-3 sm:flex-0 shrink-0 sm:w-6/12 lg:w-5/12">
-    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white dark:bg-gray-950 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
     <div class="flex-auto p-4">
     <div class="flex flex-wrap -mx-3">
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
-    <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Data załadunku</p>
-    <h5 class="mb-0  dark:text-white">
+    <p class="mb-0 font-sans font-semibold leading-normal text-sm">Data załadunku</p>
+    <h5 class="mb-0 ">
     {{ $transportOrder->loading_date }}
 
     </h5>
@@ -43,13 +43,13 @@
     </div>
     </div>
     </div>
-    <div class="relative flex flex-col min-w-0 break-words bg-white dark:bg-gray-950 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+    <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
     <div class="flex-auto p-4">
     <div class="flex flex-wrap -mx-3">
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
-    <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Data rozładunku</p>
-    <h5 class="mb-0  dark:text-white">
+    <p class="mb-0 font-sans font-semibold leading-normal text-sm">Data rozładunku</p>
+    <h5 class="mb-0 ">
     {{ $transportOrder->unloading_date}}
 
     </h5>
@@ -68,13 +68,13 @@
     </div>
     </div>
     <div class="w-full max-w-full px-3 mt-6 sm:flex-0 shrink-0 sm:mt-0 sm:w-6/12 lg:w-5/12">
-    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white dark:bg-gray-950 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
     <div class="flex-auto p-4">
     <div class="flex flex-wrap -mx-3">
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
-    <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Miejsce załadunku</p>
-    <h5 class="mb-0  dark:text-white">
+    <p class="mb-0 font-sans font-semibold leading-normal text-sm">Miejsce załadunku</p>
+    <h5 class="mb-0 ">
         {{ $transportOrder->loading_address }}
 
     </h5>
@@ -90,13 +90,13 @@
     </div>
     </div>
     </div>
-    <div class="relative flex flex-col min-w-0 break-words bg-white dark:bg-gray-950 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+    <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
     <div class="flex-auto p-4">
     <div class="flex flex-wrap -mx-3">
     <div class="flex-none w-2/3 max-w-full px-3">
     <div>
-     <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Miejsce rozładunku</p>
-    <h5 class="mb-0  dark:text-white">
+     <p class="mb-0 font-sans font-semibold leading-normal text-sm">Miejsce rozładunku</p>
+    <h5 class="mb-0 ">
     {{ $transportOrder->unloading_address }}
     </h5>
     </div>
@@ -115,69 +115,69 @@
     </div>
     <div class="flex flex-wrap mt-6 -mx-3">
     <div class="w-full max-w-full px-3 flex-0 lg:w-10/12">
-    <div class="relative flex flex-col min-w-0 break-words bg-white border-0 border-solid dark:bg-gray-950 border-black-125 shadow-soft-xl dark:shadow-soft-dark-xl rounded-2xl bg-clip-border">
+    <div class="relative flex flex-col min-w-0 break-words bg-white border-0 border-solid border-black-125 shadow-soft-xl rounded-2xl bg-clip-border">
     <div class="p-4 pb-0 mb-0 rounded-t-4">
     <div class="flex justify-between">
-        <p class="mb-0 font-sans font-semibold leading-normal text-sm dark:opacity-60">Szczegóły zlecenia</p>
+        <p class="mb-0 font-sans font-semibold leading-normal text-sm">Szczegóły zlecenia</p>
     </div>
     </div>
     <div class="overflow-x-auto ps">
-    <table class="items-center w-full mb-4 align-top border-gray-200 dark:border-white/40">
+    <table class="items-center w-full mb-4 align-top border-gray-200">
     <tbody>
 
     <tr>
-    <td class="p-2 align-middle bg-transparent border-b w-4/10 whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b w-4/10 whitespace-nowrap">
     <div class="flex items-center px-2 py-1">
 
     <div class="ml-6">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Dystans</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">500</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Dystans</p>
+    <h6 class="mb-0 leading-normal text-sm">500</h6>
     </div>
     </div>
     </td>
-    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
     <div class="text-center">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">KM PUSTE:</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">50</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">KM PUSTE:</p>
+    <h6 class="mb-0 leading-normal text-sm">50</h6>
     </div>
     </td>
-    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
     <div class="text-center">
 
     </div>
     </td>
-    <td class="p-2 leading-normal align-middle bg-transparent border-b text-sm whitespace-nowrap dark:border-white/40">
+    <td class="p-2 leading-normal align-middle bg-transparent border-b text-sm whitespace-nowrap">
     <div class="flex-1 text-center">
-        <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">KM Ładowne:</p>
-        <h6 class="mb-0 leading-normal text-sm dark:text-white">450 (90%)</h6>
+        <p class="mb-0 font-semibold leading-tight text-xs">KM Ładowne:</p>
+        <h6 class="mb-0 leading-normal text-sm">450 (90%)</h6>
     </div>
     </td>
     </tr>
     <tr>
-    <td class="p-2 align-middle bg-transparent border-b w-3/10 whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b w-3/10 whitespace-nowrap">
     <div class="flex items-center px-2 py-1">
 
     <div class="ml-6">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Kierowca</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">Grzegorz Kierownica</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Kierowca</p>
+    <h6 class="mb-0 leading-normal text-sm">Grzegorz Kierownica</h6>
     </div>
     </div>
     </td>
-    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
     <div class="text-center">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Auto:</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">GD6054U</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Auto:</p>
+    <h6 class="mb-0 leading-normal text-sm">GD6054U</h6>
     </div>
     </td>
-    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap dark:border-white/40">
+    <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap">
     <div class="text-center">
 
     </div>
     </td>
-    <td class="p-2 leading-normal align-middle bg-transparent border-b text-sm whitespace-nowrap dark:border-white/40">
+    <td class="p-2 leading-normal align-middle bg-transparent border-b text-sm whitespace-nowrap">
     <div class="flex-1 text-center">
-        <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Naczepa:</p>
-        <h6 class="mb-0 leading-normal text-sm dark:text-white">GD6054U</h6>
+        <p class="mb-0 font-semibold leading-tight text-xs">Naczepa:</p>
+        <h6 class="mb-0 leading-normal text-sm">GD6054U</h6>
 
     </div>
     </td>
@@ -187,15 +187,15 @@
     <div class="flex items-center px-2 py-1">
 
     <div class="ml-6">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Kontrahent</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">Spedycja sp. zoo</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Kontrahent</p>
+    <h6 class="mb-0 leading-normal text-sm">Spedycja sp. zoo</h6>
     </div>
     </div>
     </td>
     <td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
     <div class="text-center">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Nip:</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">0123456789</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Nip:</p>
+    <h6 class="mb-0 leading-normal text-sm">0123456789</h6>
     </div>
     </td>
     <td class="p-2 align-middle bg-transparent border-0 whitespace-nowrap">
@@ -203,8 +203,8 @@
     </td>
     <td class="p-2 leading-normal align-middle bg-transparent border-0 text-sm whitespace-nowrap">
     <div class="flex-1 text-center">
-    <p class="mb-0 font-semibold leading-tight text-xs dark:opacity-60">Dług:</p>
-    <h6 class="mb-0 leading-normal text-sm dark:text-white">500e (+30%)</h6>
+    <p class="mb-0 font-semibold leading-tight text-xs">Dług:</p>
+    <h6 class="mb-0 leading-normal text-sm">500e (+30%)</h6>
 
     </div>
 
@@ -216,7 +216,7 @@
 
     </table>
     <div class="flex flex-col justify-center items-center p-3 mb-4">
-        <p class="mb-0 font-semibold leading-tight text-red-600 text-xs dark:opacity-60">warning: wykryto przetrminowane faktury!</p>
+        <p class="mb-0 font-semibold leading-tight text-red-600 text-xs">warning: wykryto przetrminowane faktury!</p>
     </div>
 
 

@@ -1,20 +1,154 @@
-$companies= Company::all()
-$companies= Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= App\Models\Company::all()
-$companies= company::factory()
-$companies= Company::factory()
-$companies= App\Models\Company::factory()
-$companies= App\Models\User::factory()
-$companies= App\Models\Company::factory()
-$companies= App\Models\Company::factory()
-$companies= App\Models\Company::all()
-Company::factory()->count(500)->create()
-Company::factory()->count(500)->create()
-Company::all()
+Driver::factory()->count(50)->create();
+App\Models\Drive::factory()->count(50)->create();
+$user = factory(App\Models\User::class)->create();
+$user = factory(App\Models\User::class)->create();
+$user = factory(App\Models\User::class)->create();
+App\Models\User::find($user->id);
+$users = factory(App\Models\User::class, 5)->make();
+$users = factory(App\Models\drivers::class, 5)->make();
+$users = factory(App\Models\drivers::class, 5)->make();
+$users = factory(App\Models\drivers::class, 5)->make();
+$users = factory(App\Models\driver::class, 5)->make();
+$users = factory(App\Models\driver::class, 5)->make();
+$drivers = factory(App\Models\driver::class, 5)->make();
+$user = factory(App\Models\Driver::class)->create();
+$user = factory(App\Models\Driver::class)->create();
+require_once __DIR__.'/../bootstrap/app.php';
+$user = factory(App\Models\User::class)->create();
+require_once __DIR__.'/../bootstrap/app.php';
+$user = factory(App\Models\User::class)->create();
+drivers::all
+App\Models\Driver::all();
+App\Models\Company::all();
+app/models/company::all
+app/models/company::all
+app/models/company::all->first()
+App\Models\Driver::all();
+App\Models\Company::all();
+App\Models\Company::all()->first;
+App\Models\Company::first;
+App\Models\Company::all;
+App\Models\Company::all;
+App\Models\Company::all;
+$result  = App\Models\Company::all();
+$result  = App\Models\Company::all();
+$result->first();
+$result  = App\Models\Company::all();
+$result->first();
+$result  = App\Models\Company::all();
+$result  = App\Models\Company::query(select * from company where id =1
+									);
+$result  = App\Models\Company::query(select * from company);
+$result  = App\Models\Company::query(select * from company);
+$result  = App\Models\Company::query('select * from company');
+$result  = App\Models\Company::query('select * from company');
+dd ($result)
+$result  = App\Models\Company::all
+$result  = App\Models\Company::all()
+$result  = App\Models\Company::all()
+$user = App\Models\User::query();
+$user = App\Models\User::query();
+$users = $user->get();
+$user = App\Models\User::query();
+$users = $user->get();
+$user = App\Models\User::all();
+$users = $user->get();
+$user = App\Models\User::all();
+$user = App\Models\drivers::all();
+$user = App\Models\company::all();
+$user = App\Models\company::all();
+
+$user->get(1)
+$user = App\Models\company::all();
+
+$user->get(2)
+$user = App\Models\company::all();
+
+$user->get(3)
+$user = App\Models\company::all();
+
+$user->get(22)
+$company = App\Models\company::all();
+
+$company->where('name', 'John')->get();
+$company = App\Models\company::all();
+$company = App\Models\company::all();
+
+$company->where('name', 'Davis Inc')->get();
+$company = App\Models\company::all();
+
+$company->where('name', 'Davis Inc')->get();
+$company = App\Models\company::all();
+
+$company->where('company_name', 'Davis Inc')->get();
+$company = App\Models\company::all();
+
+$company->where('company_name', 'Davis Inc')->get();
+$user = App\Models\company::all();
+
+$user->where('name', 'Davis Inc')->get();
+$user = App\Models\company::all();
+$user = App\Models\company::all();
+$company = App\Models\company::all();
+$company->where('company_name', 'Davis Inc')->get()
+$company = App\Models\company::query();
+$company = App\Models\company::query();
+$users = $user->get();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = App\Models\company::query();
+$company = $user->get();
+$company = App\Models\company::query();
+$company = $company->get();
+$company = App\Models\company::query();
+$company = $company->get()->where('company_name', Collins Group );
+$company = App\Models\company::query();
+$company = $company->get()->where('company_name', 'Collins Group' );
+$company = App\Models\company::query()->where('company_name', 'Collins Group' );
+$company = App\Models\company::query();
+$company = $company->get()->where('company_name', 'Collins Group' )
+$company = App\Models\company::query();
+$company = $company->get()->where('company_name', 'Collins Group' )->select->('company_name')
+$company = App\Models\company::query();
+$company = $company->select->('company_name')
+$company = App\Models\company::query();
+$company = $company->select->('company_name')
+$company = App\Models\company::query();
+$company = $company->get()->select('company_name')
+$company = App\Models\company::query();
+$company = $company->get()->select('company_name');
+$company = App\Models\company::query();
+$company::select('name', 'email')->get();
+$company = App\Models\company::query();
+$company::select('name', 'email')->get();
+$company = App\Models\company::query();
+$company = App\Models\Company::select('name', 'email')->get();
+$company = App\Models\Company::select('company_name')->get();
+$company = App\Models\company::query();
+$company ->select('name', 'email')->get();
+$company = App\Models\company::query()->select('name', 'email')->get();
+$company = App\Models\company::query()->select('comapny_name')->get();
+$company = App\Models\company::query()->select('comapny_name')->get();
+$company = App\Models\company::query()->select('company_name')->get();
+$company = App\Models\company::query()->select('company_name')->limit(3)->get();
+$company = App\Models\company::query()->select('company_name')->limit(4)->get();
+$company =  DB::table('company')query()->select('company_name')->limit(4)->get();
+$company =  DB::table('companies')query()->select('company_name')->limit(4)->get();
+$company =  DB::table('company')query()->select('company_name')->limit(4)->get();
+$company =  DB::table('company')->query()->select('company_name')->limit(4)->get();
+$company =  DB::table('company')->select('company_name')->limit(4)->get();
+$company =  DB::table('companies')->select('company_name')->limit(4)->get();
+$company = app\models\company::query()->get();
+$company = App\Models\Company::query()->get()
+$company = App\Models\Company::query()->select(' company_name','City', 'Street' )->get()
+$company = App\Models\Company::query()->select(' company_name','City', 'Street' )->get();
+$company = App\Models\Company::query()->select('company_name','City', 'Street' )->get();
